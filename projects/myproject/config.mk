@@ -1,7 +1,7 @@
 
 # Configurations:
 
-VERBOSE=n
+VERBOSE=y
 OPT=g
 USE_NANO=y
 USE_LTO=n
@@ -10,5 +10,3 @@ USE_FPU=y
 ENFORCE_NOGPL=n
 
 # Libraries:
-
-USE_BOARD=y
