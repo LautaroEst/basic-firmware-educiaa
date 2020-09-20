@@ -332,8 +332,8 @@ erase:
 	--gdbcmd="break main" \
 	--gdbcmd="continue"
 
-debug:
-	@$(MAKE) -j 2 .debug .run_gdb
+# debug:
+# 	@$(MAKE) -j 2 .debug .run_gdb
 
 # TEST: Run hardware tests
 .hardware_test: $(TARGET)
@@ -360,12 +360,12 @@ clean_all:
 # Utilities ------------------------------------------------------------
 
 # New program generator
-new_program:
-	@sh scripts/program/new_program.sh
+# new_program:
+#	@sh scripts/program/new_program.sh
 
 # Select program to compile
-select_program:
-	@sh scripts/program/select_program.sh
+# select_program:
+# 	@sh scripts/program/select_program.sh
 
 # TEST: Build all programs
 .test_build_all:
@@ -387,4 +387,5 @@ else
 endif
 # ----------------------------------------------------------------------
 
-.PHONY: all size download erase clean new_program select_program select_board
+# .PHONY: all size download erase clean new_program select_program select_board
+.PHONY: all size download erase clean
