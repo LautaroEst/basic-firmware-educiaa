@@ -273,7 +273,7 @@ size: $(TARGET)
 # OpenOCD and GDB operations -------------------------------------------
 
 # OpenOCD executable name
-OOCD=tools/openocd/bin/openocd
+OOCD=~/CIAA/tools/openocd/bin/openocd
 
 # OpenOCD configuration script for board
 OOCD_SCRIPT=scripts/openocd/lpc4337.cfg
