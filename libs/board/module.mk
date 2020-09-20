@@ -15,4 +15,7 @@ INCLUDES+=-I$(BOARD_BASE)/lpc_chip_43xx/usbd_rom
 SRC+=$(wildcard $(BOARD_BASE)/lpc_startup/src/*.c) 
 INCLUDES+=-I$(BOARD_BASE)/lpc_startup/inc
 
+else	
+$(error BOARD module must be included for EDU-CIAA!)
+
 endif
