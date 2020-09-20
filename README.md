@@ -12,4 +12,15 @@ El *firmware* es un projecto Makefile, es decir, un conjunto de directorios con 
 
 El directorio [libs](./libs) contiene los módulos o librerías que van a utilizar los programas. Para que un programa compile correctamente, se utilizan como punto de partida las librerías [CMSIS Core](./libs/cmsis_core) y [board](./libs/board), las cuales contienen las instrucciones para llamar a la rutina principal (*main*) y para inicializar la placa correctamente. Es posible agregar módulos propios a este directorio y utilizarlos en el programa, pero deben seguirse las instrucciones de [este](./libs/Readme.md) archivo.
 
-El directorio [projects](./projects) contiene los proyectos que se vayan desarrollando con el firmware. Para detalles sobre cómo crear y configurar un nuevo proyecto, ver [acá](./projects/Readme.md)
+El directorio [projects](./projects) contiene los proyectos que se van a ir desarrollando con el firmware. Para detalles sobre cómo crear y configurar un nuevo proyecto, ver [acá](./projects/Readme.md).
+**El archivo `program.mk` contiene la dirección donde se encuentra el proyecto que se va a compilar**.
+
+Targets del proyecto:
+
+* `all`: Compila el proyecto.
+* `clean`: Borra los archivos del directorio `out` del proyecto seleccionado.
+* `clean all`: Borra los archivos del directorio `out` de todos los proyectos dentro de `proyects`.
+* `download`: Descarga el binario compilado a la placa.
+* `erase`: Borra la flash de la board seleccionada. Es necesario resetear la plataforma luego de aplicarlo.
+* `size`: Muestra el tamaño del programa compilado.
+
