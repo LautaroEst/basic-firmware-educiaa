@@ -1,4 +1,4 @@
 
 
 PROGRAM_PATH = projects
-PROGRAM_NAME = basic-project
+PROGRAM_NAME = yakindu-project

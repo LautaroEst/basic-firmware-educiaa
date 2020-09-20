@@ -1,0 +1,11 @@
+GeneratorModel for yakindu::c {
+
+	statechart blink {
+
+		feature Outlet {
+			targetProject = "basic-firmware-educiaa"
+			targetFolder = "projects/yakindu-project/gen"
+			libraryTargetFolder = "projects/yakindu-project/inc"
+		}
+	}
+}
