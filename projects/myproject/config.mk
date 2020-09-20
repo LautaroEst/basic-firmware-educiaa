@@ -1,7 +1,7 @@
 
 # Configurations:
 
-VERBOSE=y
+VERBOSE=n
 OPT=g
 USE_NANO=y
 USE_LTO=n
