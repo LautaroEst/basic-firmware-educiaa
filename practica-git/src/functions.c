@@ -5,7 +5,7 @@
 #include "functions.h"
 
 #define MENU_OPTION_SUM "sum"
-#define MENU_OPTION_PRODUCT "sum"
+#define MENU_OPTION_PRODUCT "prod"
 
 // boot_t
 
@@ -51,8 +51,7 @@ bool_t validate_number(char *str)
     return condition ;
 }
 
-// retorna un true cuando el str es  "sum" o "prod"
-
+// valida si es un string de char 
 bool_t validate_alphabet(char *str)
 {
     bool_t condition = true ;
@@ -67,7 +66,7 @@ bool_t validate_alphabet(char *str)
     return condition ;
 }
 
-
+// retorna un true cuando el str es  "sum" o "prod" las dos unicas opciones validas
 bool_t validate_option(char *str){
 
     bool_t condition = false ;
