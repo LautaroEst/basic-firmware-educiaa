@@ -1,16 +1,12 @@
 #include "stack.h"
 
-struct stack_t{
-	unsigned size;
-	stack_t* data;
-}
 
 void push(double data){
-	
+	return;
 }
 int pop(void){
-	
+	return 0;
 }
-bool_t empty(void){
-	
+bool empty(void){
+	return true;
 }
