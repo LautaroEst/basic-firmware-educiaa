@@ -1,13 +1,14 @@
-/*
- * stack.h
- *
- *  Created on: 8 oct. 2020
- *      Author: Federico
- */
+#ifndef _STACK_H_
+#define _STACK_H_
 
-#ifndef INC_STACK_H_
-#define INC_STACK_H_
+typedef struct stack_t{
+	double data;
+	struct stack_t * next;
+}stack_t;
 
+struct stack_t* stack_create(void);
+void stack_destroy(struct stack_t** sp);
+int stack_push(struct stack_t* sp, double d);
+double stack_pop(struct stack_t** sp);
 
-
-#endif /* INC_STACK_H_ */
+#endif /*_STACK_H_*/
