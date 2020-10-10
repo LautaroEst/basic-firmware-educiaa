@@ -4,12 +4,12 @@
 #include <stdbool.h>
 
 typedef struct stack_t{
-	unsigned size;
-	struct stack_t* data;
+	unsigned size = 0;
+	struct stack_t* data = NULL;
 }stack_t;
 
 void push(double data);
-int pop(void);
+double pop(void);
 bool empty(void);
 
 
