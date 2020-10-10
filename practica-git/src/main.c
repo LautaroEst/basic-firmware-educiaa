@@ -1,7 +1,6 @@
 #include "main.h"
 
-#DEFINE LABEL_SUM = "suma"
-#DEFINE LABEL_PROD = "prod"
+
 
 // ------------ //
 // --- Main --- //
@@ -16,27 +15,25 @@ int main(void){
 	bool isProd;
 	
 	// collect numbers
-	fgets(input); // get first input
-	while(input != LABEL_SUM && input != LABEL_PROD){ // while not sum or prod
+	fgets(input,10,stdin); // get first input
+	while(strcmp(input,LABEL_SUM) && strcmp(input, LABEL_PROD)){ // while not sum or prod
 		//validate and translate to double
-		data.push(number)
-		fgets(input);
+		number = atof(input);
+		if(number != 0){
+			push(number);
+		}
+		//collect again
+		fgets(input,10,stdin);
 	}
 	
 	// check type of function (prod or sum)
-	if(input == LABEL_PROD){
-		isProd = true;
+	if(strcmp(input,LABEL_SUM)){
+		ans = sumStack(data);
 	} else {
-		isProd = false;
-	}
-	
-	// do the math
-	if(isProd){
-		// mult function
-	} else {
-		// sum function
+		ans = prodStack(data);
 	}
 	
 	// print answer
+	fprintf(stdout,"Resultado: %d",ans);
 	return 0;
 }

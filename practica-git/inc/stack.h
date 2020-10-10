@@ -4,8 +4,8 @@
 #include <stdbool.h>
 
 typedef struct stack_t{
-	unsigned size = 0;
-	struct stack_t* data = NULL;
+	unsigned size;
+	struct stack_t* data;
 }stack_t;
 
 void push(double data);

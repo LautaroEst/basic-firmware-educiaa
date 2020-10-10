@@ -1,5 +1,6 @@
 //  ****** TP0 sistemas embebidos *****
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h> // malloc, free
 
 // lista enlazada :
@@ -106,7 +107,7 @@ double ProdPila(Pila* pila)
 }
 
 // main principal
-int main(void)
+/*int main(void)
 {
 	float sumatoria = 0 ;
 	float productoria = 0 ;
@@ -126,10 +127,10 @@ int main(void)
 	DestructorPila(myPila) ;
 
 	
-	printf("la suma es  :%.6f \n", sumatoria) ;
-	printf("El porducto es : %.6f \n", productoria) ;
+	//printf("la suma es  :%.6f \n", sumatoria) ;
+	//printf("El porducto es : %.6f \n", productoria) ;
 
 	return 0;
 
-}
+}*/
 
