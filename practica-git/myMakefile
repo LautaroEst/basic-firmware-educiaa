@@ -1,0 +1,19 @@
+#compiller:
+gcc -Wall -c -std=c99 src/validation.c -o validation.o
+gcc -Wall -c -std=c99 src/pila.c -o pila.o
+gcc -Wall -c -std=c99 src/tp0.c -o tp0.o
+gcc tp0.o validation.o pila.o -o tp0
+
+#clear :
+rm validation.o
+rm pila.o
+rm tp0.o
+
+echo "build sussesfully!"
+echo "to run program type  ./tp0"
+
+# test
+echo ""
+echo "runing test ... "
+
+./tp0
